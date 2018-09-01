@@ -1,0 +1,21 @@
+.flex-column {
+  max-width: 75%;
+}
+
+.container {
+  /* top: 200px; */
+  left: 20%;
+  background: #0000e6;
+}
+
+.header {
+  margin-left: 25%;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+img {
+  margin: 2px;
+}
