@@ -1,0 +1,130 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: #d0d9e1;
+}
+
+.header {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.row {
+  width: 75%;
+  margin-left: 11.5%;
+}
+
+.col-sm {
+  background-color: #66c2ff;
+  opacity: .8;
+  height: 250px;
+  width: 100%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+
+.title {
+  position: absolute;
+  height: 50px;
+  width: inherit;
+  background-color: #0055a4;
+  bottom: 0px;
+  left: 0;
+  text-align: center;
+}
+
+.col-md {
+  width: 400px;
+  height: 300px;
+}
+
+.col-lg {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-methods {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.btn {
+  margin-top: -10px;
+  background-color: #004f99;
+}
+
+.copyright {
+  height: 75px;
+  width: auto;
+  background-color: #0055a4;
+  bottom: 0;
+}
+
+#bio-section {
+  width: 100% !important;
+  margin: 0 !important;
+  height: 280px;
+  background-color: #468499;
+
+}
+
+#self {
+  margin-left: 150px;
+  margin-top: 15px;
+  height:250px;
+  width:400px;
+}
+
+.bio {
+  left: 0;
+  /* margin: auto; */
+  /* margin-right: 25%; */
+  font-size: 14px;
+}
+
+/* ---------------- text ---------------- */
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Bungee Inline', cursive;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+p {
+  padding-top: 12px;
+  font-weight: bolder;
+  color: white;
+  font-family: 'Actor', sans-serif;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: black;
+}
+
+.footer-text {
+  padding-top: 9%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  color: black;
+}
+
+.copyright-text {
+  padding-top: 25px;
+  padding-right: 15px;
+  float: right;
+  font-weight: lighter;
+  font-size: 12px;
+}
