@@ -1,0 +1,65 @@
+<head>
+  <style>
+  {
+      box-sizing: border-box;
+  }
+
+  .column {
+      float: left;
+      width: 20%;
+      padding: 3px;
+      border: 1px solid black;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+      .column {
+          width: 100%;
+      }
+  }
+  </style>
+</head>
+<body>
+
+<h2>Responsive Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/general/lunarrider.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/misc/placeholder.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/portrait/bowie-neat.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/jewelry/arrow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/general/lunarrider.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/portrait/bowie-neat.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/jewelry/arrow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/misc/placeholder.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/photography/stbarbara.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
