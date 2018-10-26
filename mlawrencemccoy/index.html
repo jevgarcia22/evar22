@@ -15,128 +15,115 @@
   </head>
   <body>
     <div class="main-container">
-<!-- header -->
-      <div class="header">
+      <div class="header"> <!-- header -->
         <h1>M. Lawrence McCoy</h1>
         <h3>Artist, Sculptor, Something else?</h3>
       </div>
-<!-- image grid -->
-      <!-- first row -->
-      <div class="row">
+
+      <div class="row" id="image-row"> <!-- first row -->
         <div class="col-sm">
-          <div class="title">
-            <p>General Sculpture</p>
-          </div>
+          <a href="galleries/flex-gallery.html">
+            <img src="images/general/spring.jpg" id="cover-image-left"/>
+            <div class="title" id="first">
+              <p>General Sculpture</p>
+            </div>
+          </a>
         </div>
         <div class="col-sm">
-          <div class="title">
-            <p>Portrait Sculpture</p>
-          </div>
+            <a href="galleries/lightbox-gallery.html">
+            <img src="images/portrait/bowie-neat.jpg" id="cover-image"/>
+            <div class="title" id="second">
+              <p>Portrait Sculpture</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="galleries/css-gallery.html">
+            <img src="images/jewelry/accuracy.jpg" id="cover-image"/>
+            <div class="title" id="third">
+              <p>Chief McCoy Jewelry</p>
+            </div>
+          </a>
+        </div>
+      </div> <!-- closes first row -->
+      <div class="row" id="image-row"> <!-- second row -->
+        <div class="col-sm">
+          <a href="galleries/responsive-side-by-side.html">
+            <img src="images/illustrations/scooter.jpg" id="cover-image-left"/>
+            <div class="title" id="fourth">
+              <p>Illustrations</p>
+            </div>
+          </a>
         </div>
         <div class="col-sm">
-          <div class="title">
-            <p>Chief McCoy Jewelry</p>
-          </div>
-        </div>
-      </div>
-      <!-- second row -->
-      <div class="row">
-        <div class="col-sm">
-          <div class="title">
-            <p>Illustrations</p>
-          </div>
+          <a href="galleries/css-gallery.html">
+            <img src="images/photography/red-shoes.jpg" id="cover-image"/>
+            <div class="title" id="fifth">
+              <p>Photography</p>
+            </div>
+          </a>
         </div>
         <div class="col-sm">
-          <div class="title">
-            <p>Photography</p>
-          </div>
+          <a href="#">
+            <img src="images/misc/placeholder.jpg" id="cover-image"/>
+            <div class="title" id="sixth">
+              <p>Shop</p>
+            </div>
+          </a>
         </div>
-        <div class="col-sm">
-          <div class="title">
-            <p>Shop</p>
-          </div>
-        </div>
-      </div>
-<!-- contact me -->
-    <div class="row">
+      </div><!-- closes second row -->
+
+    <div class="row"> <!-- introduction -->
       <div class="col-lg">
-        <p class="contact-text">Welcome to the ongoing experiment that is my art life.
+        <p class="contact-text">Welcome to the ongoing experiment that is my art life.<br>
                    Have a look around. If you have any questions, comments,
-                   or ideas for commissions, Please contact me. I'd love
+                   or ideas for commissions, <br>Please contact me. I'd love
                    to hear from you.<br>
                    ~ Matthew</p>
-        <button type="button" class="btn btn-secondary">Contact Me</button>
+        <a href="contact.html" class="btn btn-light">Contact Me</a>
         <div class="contact-methods">
-          <i class="fab fa-facebook-square fa-2x"></i>
-          <i class="fab fa-instagram fa-2x"></i>
+          <a href="https://www.facebook.com/matthewlmccoy">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/mlawrencemccoy/?hl=en">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div> <!-- introduction close -->
+
+    <div class="row">
+      <div class="parallax">
+        <div class="col-md" id="bio-text">
+          <p>I enjoy making things. In a way, there’s really not
+            much more to it than that. Sure, I have theories on why
+            I do it. I have theories on art and what it’s for, how
+            it helps us, how it hurts us. If I really thought I could
+            express these ideas with words, I would have chosen to be a
+            writer. Since I’m not a writer, I try to speak visually.
+            I try to be honest with my art and let it express what I
+            really feel is important to me. Hopefully people will enjoy it.
+            Hopefully I’ll never have to stop. Aside from that, I’m a Texan
+            guy in his early 30′s, living in a cottage in the countryside
+            near Austin. If you’re ever out this way, stop on by and say hi.
+            See what I’m up to.
+          </p>
         </div>
       </div>
     </div>
-<!-- bio section -->
-        <div class="row" id="bio-section">
-          <div class="col">
-            <div class="pic">
-              <img src="images/misc/self.jpg" id="self"/>
-            </div>
-          </div>
-          <div class="col">
-            <div class="bio">
-              <p>I enjoy making things. In a way, there’s really not
-                much more to it than that. Sure, I have theories on why
-                I do it. I have theories on art and what it’s for, how
-                it helps us, how it hurts us. If I really thought I could
-                express these ideas with words, I would have chosen to be a
-                writer. Since I’m not a writer, I try to speak visually.
-                I try to be honest with my art and let it express what I
-                really feel is important to me. Hopefully people will enjoy it.
-                Hopefully I’ll never have to stop. Aside from that, I’m a Texan
-                guy in his early 30′s, living in a cottage in the countryside
-                near Austin. If you’re ever out this way, stop on by and say hi.
-                See what I’m up to.</p>
-            </div>
-          </div>
-        </div>
-      <!-- copyright -->
-      <div class="copyright">
-        <p class="copyright-text">2018 | M. Lawrence McCoy<p>
+
+<!-- copyright -->
+    <div class="row" id="footer-container">
+      <div class="col-xl" id="footer-text">
+        <hr style="border:.5px solid #1d2b99;width:75%;">
+        <p id="ftext1">2018 | M. Lawrence McCoy</p><br>
+        <p id="ftext2">designed by me</p>
       </div>
     </div>
-
-
-          <!-- <img src="images/general/bowie-neat-scaled-color.jpg"/>
-          <div class="section-title-box">
-            <p class="section-title">Portrait<br>Sculpture</p>
-          </div> -->
-        <!-- </div>
-        <div class="col-sm-4">
-          <img src="images/general/arrow-scaled.jpg"/>
-          <p class="section-title">Chief McCoy<br>Jewelry</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="images/general/deer-scaled.jpg"/>
-          <p class="section-title">Illustrations</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="images/general/stbarbara-scaled.jpg"/>
-        <p class="section-title">Photography</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="images/general/placeholder.jpg"/>
-        <p class="section-title">Shop</p> -->
-      <!-- </div> -->
-    <!-- </div>
-    </div>
-  </div> -->
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
