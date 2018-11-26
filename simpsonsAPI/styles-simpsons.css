@@ -1,0 +1,50 @@
+body {
+  background-image: url('scene3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 5% 25% 0 25%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: simpsons, sans-serif;
+  font-size: 325%;
+  color: white;
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-style: italic;
+  font-size: 175%;
+  color: white;
+}
+
+img {
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+@font-face {
+  font-family: simpsons; src: url('Simpsonfont DEMO.otf');
+}
