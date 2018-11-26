@@ -4,7 +4,7 @@ This Repository Contains:
 - Tests to verify functionality of the Github /users GET endpoint. Tests are written
   in Javascript, using the SuperTest assertion library
 
-Part 1 Questions and Answers
+<!-- Part 1 Questions and Answers
 
   What concerns would you have from a testing perspective?
    - how is the endpoint consumed?
@@ -24,7 +24,7 @@ Part 1 Questions and Answers
    - validate response & status code when sending data via un-authenticated user
 
   What tools would you use?
-     - Postman or Fiddler to manually send requests/recieve responses from endpoints
+     - Postman or Fiddler to manually send requests/recieve responses from endpoints -->
 
 
 
