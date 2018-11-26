@@ -21,7 +21,7 @@ request.onload = function() {
 
       //create p element set text content to quote
       const p = document.createElement('p');
-      quote.quote = quote.quote.substring(0,1000); //limit to 100 chars
+      quote.quote = quote.quote.substring(0,100); //limit to 100 chars
       p.textContent = quote.quote; //end with ellipses
 
       //create img element for character image
