@@ -1,4 +1,5 @@
 ## FUNCTIONS ##
+
 #add 2 numbers
 def add(x,y):
     return x + y
@@ -15,14 +16,15 @@ def multiply(x,y):
 def divide(x,y):
     return x/y
 
+#operation options
 print('Choose your operation')
 print('1. Add')
 print('2. Subtract')
 print('3. Multiply')
 print('4. Divide')
 
-#get user input
-choice = input('Enter 1,2,3 or 4 to select')
+#get user inputs
+choice = input('Enter 1,2,3 or 4 to select: ')
 
 number1 = int(input('Enter first number: '))
 number2 = int(input('Enter second number: '))
@@ -41,3 +43,6 @@ elif choice=='4':
 
 else:
     print('Invalid selection. Try again')
+
+#todo: handle more numbers
+#todo: handle bad inputs
