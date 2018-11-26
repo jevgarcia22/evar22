@@ -35,18 +35,24 @@
   padding: 0 !important;
 }
 
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+
 a:link {
     text-decoration: none;
 }
 
-/* a:hover {
+ a:hover {
   color: white;
-} */
+}
 
 a:hover div.title {
   color: white;
   background-color: #1d2b99;
-}
+} 
 
 .title {
   height: 15%;
