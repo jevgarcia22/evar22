@@ -1,4 +1,4 @@
-# QA Engineer Coding Exercise
+<!-- # QA Engineer Coding Exercise -->
 
 This Repository Contains:
 - Tests to verify functionality of the Github /users GET endpoint. Tests are written
