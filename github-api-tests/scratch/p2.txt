@@ -1,0 +1,29 @@
+Part 2 Questions and Answers
+
+2. Assume you are part of an engineering team that is building a loyalty app for a large
+retailer. You are in a meeting in which the following stories are being discussed by the
+product owner and engineering team:
+a) As a customer, I want to enroll in the loyalty program.
+b) As a program participant, I want to check my balance of reward points.
+c) As a program participant, I want to redeem some of my points for a reward.
+Describe how you might participate in this meeting to ensure that the development work for
+these stories can be demonstrated to the product owner. What are your areas of concern?
+How would you address them? Provide your answers as a PDF.
+
+As the quality representative, my role is to:
+- Ensure acceptance criteria is sufficiently defined and understood by the team.
+  Given the current stories, I would ask the following questions of PdM:
+  - who can enroll?
+  - what data is required to enroll?
+  - what is required to redeem points? (i.e, is there a minimum to be met?)
+  - what can points be redeemed for?
+  - are there external dependencies? (i.e, legal considerations)
+
+Areas of concern:
+- Areas to test: This should be addressed with the group.
+  - would need to understand what parts of the code are being touched. Do those
+    areas overlap with other areas that would require testing?
+- Performance:
+  - how much load should the application be able to handle?
+- Security:
+  - can one user see another user's data?

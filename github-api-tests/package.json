@@ -1,0 +1,14 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha -w test.js"
+  },
+  "author": "jg",
+  "license": "ISC",
+  "dependencies": {
+    "supertest": "^3.3.0"
+  }
+}
