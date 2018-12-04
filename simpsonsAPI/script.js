@@ -22,7 +22,7 @@ request.onload = function() {
       //create p element set text content to quote
       const p = document.createElement('p');
       quote.quote = quote.quote.substring(0,100); //limit to 100 chars
-      p.textContent = quote.quote; //end with ellipses
+      p.textContent = quote.quote;
 
       //create img element for character image
       const img = document.createElement('img');
