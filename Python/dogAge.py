@@ -1,71 +1,62 @@
-#15 human years == first year of med-size dog
-#year two for a dog == 9 human years
-#after that, each human year == 5 dog years** make note that this is APPROX
-
-#according to American Kennel Association, a small dog will age 4 years each
-#year starting at age 3
-
-#for medium and big dogs, they age approx 5 years for each human year
-#starting at age 3
-
-#for giant dogs, they age approx 7 years for each human year
-
-#figure out dog age in human years
-
 #get dog weight from user
 def getWeight():
-    weight = int(input("How much does your dog weigh? "))
-    return weight
+    #TODO: input validation
+    return int(input("How much does your dog weigh? "))
 
 #get dog age from user
 def getAge():
-    age = int(input("How old is your dog? "))
-    return age
+    #TODO: input validation
+    return int(input("How old is your dog? "))
 
 def youngDog(age):
     if age == 1:
         humanAge = 15
     elif age == 2:
         humanAge = 24
-    printResult(humanAge)
-    runAgain()
+    elif age == 1 and weight >=100:
+        humanAge = 12
+    elif age == 2 and weight >=100:
+        humanAge = 22
+    return humanAge
 
 #calculate age of a small dog
 #assumes rate of 4 human years to every dog year
 def smallDog(age):
     count = 0
-    if age >= 3:
-        for x in range(3, age):
-            count += 1
-        humanAge = 28 + (4 * count)
-    return humanAge
+    for x in range(3, age):
+        count += 1
+    return 28 + (4 * count)
 
-#calculate age of a med to lrg dog
+#calculate age of a med dog
 #assumes rate of 5 human years to every dog year
-def medToLrgDog(age):
+def medDog(age):
     count = 0
-    if age >=3:
-        for x in range(3, age):
-            count += 1
-        humanAge = 28 + (5 * count)
-    return humanAge
+    for x in range(3, age):
+        count += 1
+    return 28 + (5 * count)
+
+#calculate age of a lrg dog
+#assumes rate of 6 human years to every dog year
+def lrgDog(age):
+    count = 0
+    for x in range(3, age):
+        count += 1
+    return 28 +(6 * count)
 
 #calculate age of a giant dog
 #assumes rate of 7 human years to every dog year
 def giantDog(age):
     count = 0
     if age == 1:
-        humanAge = 12
+        return 12
     elif age == 2:
-        humanAge = 22
+        return 22
     elif age == 3:
-        humanAge == 31
+        return 31
     elif age >=4:
         for x in range(3, age):
             count += 1
-        humanAge = 28 + (7 * count)
-    printResult(humanAge)
-    runAgain()
+        return 31 + (7 * count)
 
 #prompt user to run again
 def runAgain():
@@ -78,26 +69,28 @@ def runAgain():
         main()
 
 #calculate age based on weight range
-def calculateAge(weight, age):
+def calculateAge():
+    age = getAge()
+    weight = getWeight()
+    #TODO: use input validation for this
     if age <= 0 :
         print("0 is not valid. try again.")
         runAgain()
-    elif age >= 1 and age <= 2 and weight <100:
-        youngDog(age)
-    elif age == 1 or age == 2 and weight >=100:
-        giantDog(age)
-    else:
-        #for dogs >2 years age
+    elif age == 1 or age == 2:
+        humanAge = youngDog(age)
+    elif age >=3:
         if weight <=20:
-            age = smallDog(age)
-        if weight >20 and weight <=99:
-            age = medToLrgDog(age)
-        if weight >=100:
-            age = giantDog(age)
-        printResult(age)
-        runAgain()
-        # return age
+            humanAge = smallDog(age)
+        if weight >20 and weight <=50:
+            humanAge = medDog(age)
+        if weight >50 and weight <=100:
+            humanAge = lrgDog(age)
+        if weight >100:
+            humanAge = giantDog(age)
+    printResult(humanAge)
+    runAgain()
 
+#print results
 def printResult(age):
     if age >=0 and age <=18:
         ageClass = " puppy"
@@ -107,10 +100,12 @@ def printResult(age):
         ageClass = " senior citizen"
     print("In human years, your dog is approximately {} years old and is a{}.".format(age,ageClass))
 
-#main function to run methods
-def main():
-    weight = getWeight()
-    age = getAge()
-    calculateAge(weight, age)
 
-main()
+def main():
+    print("How Old Is My Dog In Human Years?")
+    print("Input the weight and age of a dog. This program will determine the approximate age in human years.")
+    calculateAge()
+
+
+if __name__ == "__main__":
+    main()
