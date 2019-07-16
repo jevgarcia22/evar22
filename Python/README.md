@@ -15,4 +15,4 @@ Calculations are based on data from the American Kennel Club (https://www.akc.or
 Results are approximations only.
 
 Program written in Python.
-Tests written in Python, using the Pytest framework.
+Tests written in Python, using the Pytest framework. Mock Object Library (unittest.mock) used to simulate user input actions.
