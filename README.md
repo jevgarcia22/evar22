@@ -1,9 +1,10 @@
 # evar22
 
-This repository is for work done (or almost done) by me. Tech used so far:
+This repository is for work done (or almost done) by me. Languages used:
 
 - Javascript
-- html
+- HTML
 - CSS
+- Python
+- Pytest
 
-I hope to add more Javascript and Python work soon.
